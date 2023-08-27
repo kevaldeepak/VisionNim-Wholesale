@@ -1,0 +1,9 @@
+.intersection-animate {
+    opacity: 0;
+}
+
+.intersection-animate.animated {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 3.4s ease;
+}

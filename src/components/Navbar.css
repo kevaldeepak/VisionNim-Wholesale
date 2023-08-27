@@ -1,0 +1,148 @@
+/* Common styles */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20vw;
+}
+
+.navbar-logo img {
+    max-height: 60px;
+}
+
+.navbar-options ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-options li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-options li a:hover {
+    color: #0071BC;
+}
+
+/* Mobile Navbar */
+.mobile-navbar {
+    position: fixed;
+    background-color: #0071BC;
+    width: 100vw;
+    z-index: 999;
+    padding: 20px 0 40px 0;
+    display: flex;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    flex-direction: column;
+}
+
+.mobile-navbar.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-out;
+}
+
+.mobile-navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-navbar ul li {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.mobile-navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.close-button-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    padding: 0 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.close-button img {
+    height: 20px;
+    width: 20px;
+}
+
+.mobile-menu-logo {
+    object-fit: cover;
+    width: 200px;
+    padding: 0 30px;
+}
+
+.mobile-navbar-button {
+    display: none;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-options {
+        display: none;
+    }
+
+    .mobile-navbar-button {
+        display: block;
+    }
+
+    .navbar {
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .navbar-logo img {
+        max-height: 50px;
+    }
+}
+
+html {
+    scroll-behavior: smooth
+}
