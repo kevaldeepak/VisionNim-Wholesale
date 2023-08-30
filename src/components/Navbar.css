@@ -12,7 +12,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #F6F4F4;
     padding: 10px 20vw;
 }
 
@@ -81,7 +81,15 @@ button {
     text-decoration: none;
 }
 
+#dropdown-menu {
+    visibility: hidden;
+}
 
+.nav-container {
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+}
 
 .close-button-container {
     width: 100vw;
@@ -94,7 +102,7 @@ button {
     background: none;
     border: none;
     padding: 0 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -112,6 +120,7 @@ button {
 
 .mobile-navbar-button {
     display: none;
+    margin-top: 10px;
 }
 
 .menu-button {
@@ -125,6 +134,8 @@ button {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .mobile-navbar {}
+
     .navbar-options {
         display: none;
     }
@@ -136,10 +147,15 @@ button {
     .navbar {
         gap: 40px;
         justify-content: center;
+        padding: 10px 5vw;
     }
 
     .navbar-logo img {
         max-height: 50px;
+    }
+
+    #dropdown-menu {
+        visibility: visible;
     }
 }
 
