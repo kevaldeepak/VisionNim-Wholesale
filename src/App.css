@@ -29,7 +29,7 @@ section {
 
 #splash-page {
     height: 100vh;
-    background-image: url(src/assets/warehouse1.jpg);
+    background-image: url(./assets/warehouse1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -48,7 +48,7 @@ section {
 
 .splash-container h3 {
     font-size: 2.5rem;
-    width: 20vw;
+    max-width: 330px;
     font-family: var(--font-primary), Arial, Helvetica, sans-serif;
 }
 
@@ -59,7 +59,7 @@ section {
     align-items: center;
     color: black;
     position: relative;
-    height: 100vh;
+    height: auto;
 }
 
 .content-container {
@@ -69,9 +69,14 @@ section {
     align-items: stretch;
     flex-wrap: wrap;
     /* Add this line */
-    background-color: red;
-    padding: 20px 10px;
+    background-color: #323232;
+    margin: 20px 10px;
+    padding: 30px 10px;
+    color: #F6F4F4;
+}
 
+.content-container h1 {
+    color: #0071BC;
 }
 
 .content-container div {
@@ -82,6 +87,7 @@ section {
     flex-direction: column;
     padding: 0 5%;
     text-align: center;
+    overflow: hidden;
 }
 
 .content-container div div {
@@ -92,10 +98,30 @@ section {
     width: 75px;
 }
 
+.content-container h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.content-container h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.content-container p {
+    font-size: 1rem;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .content-container div {
         width: 100%;
     }
+
+    .splash-container h3 {
+        font-size: 1.6rem;
+        max-width: 50vw;
+    }
+
 }
