@@ -1,10 +1,18 @@
+import "./Features.css"
 
+interface Props {
+    image: string;
+    heading: string;
+    content: string;
+}
 
-function Features() {
+function Features({ image, heading, content }: Props) {
     return (
-        <>
-            <h1>2</h1>
-        </>
+        <div className="Features-container">
+            <img src={image}></img>
+            <h4>{heading}</h4>
+            <p>{content}</p>
+        </div>
     )
 }
 
