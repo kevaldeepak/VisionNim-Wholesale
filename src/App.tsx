@@ -23,7 +23,7 @@ function App() {
             <Navbar></Navbar>
             <section id="splash-page">
                 <div className='splash-container'>
-                    <h3>High Quality products from leading brands.</h3>
+                    <h3>hHigh Quality products from leading brands.</h3>
                 </div>
             </section>
             <section id="WhoWeAre">
