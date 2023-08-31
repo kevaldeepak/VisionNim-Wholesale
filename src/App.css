@@ -29,7 +29,7 @@ section {
 
 #splash-page {
     height: 100vh;
-    background-image: url(./assets/warehouse1.jpg);
+    background-image: url(src/assets/warehouse1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -53,7 +53,8 @@ section {
 }
 
 /* WhoWeAre */
-#WhoWeAre {
+#WhoWeAre,
+#WhatWeOffer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +62,9 @@ section {
     position: relative;
     height: auto;
 }
+
+
+
 
 .content-container {
     width: 80vw;
@@ -71,7 +75,7 @@ section {
     /* Add this line */
     background-color: #323232;
     margin: 20px 10px;
-    padding: 30px 10px;
+    padding: 30px 30px;
     color: #F6F4F4;
 }
 
@@ -113,6 +117,65 @@ section {
 }
 
 
+
+.offer-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* Add this line */
+    background-color: #323232;
+    margin: 20px 10px;
+    padding: 50px 30px;
+    color: #F6F4F4;
+    gap: 50px;
+}
+
+.offer-left-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    /* Add this line */
+    flex-direction: column;
+    /* Add this line */
+    justify-content: center;
+    /* Add this line */
+    align-items: center;
+    /* Add this line */
+}
+
+.offer-left-container h1,
+.offer-left-container p {
+    margin: 0;
+}
+
+.offer-left-container h1 {
+    font-size: 2rem;
+    color: #0071BC;
+    margin-bottom: 10px;
+}
+
+.offer-left-container p {
+    font-size: 1rem;
+    color: #F6F4F4;
+    max-width: 40vw;
+
+}
+
+.company-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .content-container div {
@@ -122,6 +185,14 @@ section {
     .splash-container h3 {
         font-size: 1.6rem;
         max-width: 50vw;
+    }
+
+    .company-list-container {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
     }
 
 }

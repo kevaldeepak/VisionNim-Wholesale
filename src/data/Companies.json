@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Apple",
+        "image": "src/assets/companies/apple-logo.png"
+    },
+    {
+        "name": "Command",
+        "image": "src/assets/companies/apple-logo.png"
+    },
+    {
+        "name": "Air wick",
+        "image": "src/assets/companies/apple-logo.png"
+    },
+    {
+        "name": "Always",
+        "image": "src/assets/companies/apple-logo.png"
+    },
+    {
+        "name": "Ariel",
+        "image": "src/assets/companies/apple-logo.png"
+    },
+    {
+        "name": "Astonish",
+        "image": "src/assets/companies/apple-logo.png"
+    },
+    {
+        "name": "Bic",
+        "image": "src/assets/companies/apple-logo.png"
+    },
+    {
+        "name": "Cif",
+        "image": "src/assets/companies/apple-logo.png"
+    }
+]

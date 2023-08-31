@@ -2,6 +2,7 @@
     margin: 10px 0;
     transition: 0.1s;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .Features-container:hover {
