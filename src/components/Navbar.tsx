@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
-// import FadeInAnim from "./FadeInAnimate";
+
+import Animate from "./Animate";
 
 function Navbar() {
     const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -39,9 +40,24 @@ function Navbar() {
                     </div>
                     <div className="navbar-options">
                         <ul>
-                            <li><a href={WhoWeAre}>Who we are</a></li>
-                            <li><a href={WhatWeOffer}>What we offer</a></li>
-                            <li><a href={Contact}>Contact</a></li>
+                            <Animate
+                                y={50}
+                                delay={0.1}
+                            >
+                                <li><a href={WhoWeAre}>Who we are</a></li>
+                            </Animate>
+                            <Animate
+                                y={50}
+                                delay={0.2}
+                            >
+                                <li><a href={WhatWeOffer}>What we offer</a></li>
+                            </Animate>
+                            <Animate
+                                y={50}
+                                delay={0.3}
+                            >
+                                <li><a href={Contact}>Contact</a></li>
+                            </Animate>
                         </ul>
                     </div>
                     <div className="mobile-navbar-button">

@@ -4,7 +4,6 @@
 :root {
     --font-primary: "Montserrat";
     --font-secondary: "Poppins";
-    --primary: #
 }
 
 body {
@@ -39,17 +38,21 @@ section {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    overflow-y: hidden;
 }
 
 
 .splash-container {
     padding: 10vh 10vw;
+    overflow-y: hidden;
 }
+
 
 .splash-container h3 {
     font-size: 2.5rem;
     max-width: 330px;
     font-family: var(--font-primary), Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
 }
 
 /* WhoWeAre */
@@ -193,6 +196,10 @@ section {
         width: 500px;
         overflow-x: scroll;
         flex-wrap: nowrap;
+    }
+
+    .offer-left-container p {
+        max-width: 90vw;
     }
 
 }

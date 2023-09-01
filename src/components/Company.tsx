@@ -1,5 +1,4 @@
 import "./Company.css";
-
 interface Props {
     name: string,
     image: string
@@ -7,6 +6,7 @@ interface Props {
 
 function Company({ name, image }: Props) {
     return (
+
         <div className="company-container">
             <div className='logo-container'>
                 <img src={image} alt='company logo' />

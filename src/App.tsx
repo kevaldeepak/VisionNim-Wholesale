@@ -5,6 +5,9 @@ import Navbar from './components/Navbar';
 import Features from './components/Features';
 import Company from './components/Company';
 
+// Animation
+import Animate from './components/Animate';
+
 // Data
 import FeaturesData from "./data/Features.json";
 import CompaniesData from "./data/Companies.json";
@@ -12,13 +15,17 @@ import CompaniesData from "./data/Companies.json";
 function App() {
 
     // Mapped Data
-    const MappedFeatures = FeaturesData.map((item) => (
-        <Features
-            key={item.heading}
-            image={item.image}
-            heading={item.heading}
-            content={item.content}
-        ></Features>
+    const MappedFeatures = FeaturesData.map((item, index) => (
+        <Animate
+            key={index}
+            delay={0.25 * index}
+        >
+            <Features
+                image={item.image}
+                heading={item.heading}
+                content={item.content}
+            ></Features>
+        </Animate>
     ));
 
     const MappedCompanies = CompaniesData.map((item) => (
@@ -36,7 +43,13 @@ function App() {
             <Navbar></Navbar>
             <section id="splash-page">
                 <div className='splash-container'>
-                    <h3>High Quality products from leading brands.</h3>
+                    <Animate
+                        x={-75}
+                        y={0}
+                        delay={0.5}
+                    >
+                        <h3>High Quality products from leading brands.</h3>
+                    </Animate>
                 </div>
             </section>
             <section id="WhoWeAre">
@@ -58,9 +71,11 @@ function App() {
                         <h1>Featured Brands</h1>
                         <p>We Supply the some of the leading brands in every category shown below with competitive pricing and fast delivery in UK Mainland. Contact Us to get your account setup and enquire about your required goods.</p>
                     </div>
-                    <div className='company-list-container'>
-                        {MappedCompanies}
-                    </div>
+                    <Animate delay={0.4}>
+                        <div className='company-list-container'>
+                            {MappedCompanies}
+                        </div>
+                    </Animate>
                 </div>
 
                 {/* <div className='company-list-container'>
