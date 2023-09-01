@@ -1,16 +1,16 @@
 [
     {
-        "image": "src/assets/brands.png",
+        "image": "./assets/brands.png",
         "heading": "INTERNATIONAL BRANDS",
         "content": "We provide the most reputable and sought after brands."
     },
     {
-        "image": "src/assets/services.png",
+        "image": "./assets/services.png",
         "heading": "FRIENDLY SERVICES",
         "content": "We can ensure best level of service, with stock availability, nationwide distribution and immediate dispatch."
     },
     {
-        "image": "src/assets/pricing.png",
+        "image": "./assets/pricing.png",
         "heading": "COMPETITIVE PRICE",
         "content": "We can guarantee most competitive price of the products we sell."
     }
