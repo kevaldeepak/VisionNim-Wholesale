@@ -62,6 +62,7 @@ function Form() {
                         value={lastName}
                         onChange={handleLastNameChange}
                         placeholder=""
+                        required
                     />
                     <h5>Last Name:</h5>
                 </label>
@@ -71,6 +72,7 @@ function Form() {
                         value={email}
                         onChange={handleEmailChange}
                         placeholder=""
+                        required
                     />
                     <h5>Email:</h5>
                 </label>
@@ -80,6 +82,7 @@ function Form() {
                         value={phoneNumber}
                         onChange={handlePhoneNumberChange}
                         placeholder=""
+                        required
                     />
                     <h5>Phone Number:</h5>
                 </label>
@@ -89,6 +92,7 @@ function Form() {
                         value={company}
                         onChange={handleCompanyChange}
                         placeholder=""
+                        required
                     />
                     <h5>Company:</h5>
                 </label>
@@ -98,6 +102,7 @@ function Form() {
                         onChange={handleMessageChange}
                         placeholder=""
                         rows={4}
+                        required
                     />
                     <h5>Message:</h5>
                 </label>
