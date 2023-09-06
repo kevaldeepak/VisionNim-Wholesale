@@ -75,7 +75,7 @@ function Form() {
                     <h5>Email:</h5>
                 </label>
                 <label>
-                    <input name='tel'
+                    <input name='phone number'
                         type="tel"
                         value={phoneNumber}
                         onChange={handlePhoneNumberChange}
@@ -84,7 +84,7 @@ function Form() {
                     <h5>Phone Number:</h5>
                 </label>
                 <label>
-                    <input name='phone number'
+                    <input name='company'
                         type="text"
                         value={company}
                         onChange={handleCompanyChange}
