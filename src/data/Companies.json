@@ -1,34 +1,34 @@
 [
     {
-        "name": "Apple",
-        "image": "./assets/companies/apple-logo.png"
-    },
-    {
         "name": "Command",
-        "image": "./assets/companies/apple-logo.png"
+        "image": "./assets/companies/command.png"
     },
     {
-        "name": "Air wick",
-        "image": "./assets/companies/apple-logo.png"
+        "name": "Takis",
+        "image": "./assets/companies/takis.webp"
     },
     {
-        "name": "Always",
-        "image": "./assets/companies/apple-logo.png"
+        "name": "Holland & Barrett",
+        "image": "./assets/companies/holland&barrett.png"
     },
     {
-        "name": "Ariel",
-        "image": "./assets/companies/apple-logo.png"
+        "name": "Dr.Beckmann",
+        "image": "./assets/companies/drbeckmann.png"
     },
     {
-        "name": "Astonish",
-        "image": "./assets/companies/apple-logo.png"
+        "name": "Cheetos",
+        "image": "./assets/companies/cheetos.png"
     },
     {
-        "name": "Bic",
-        "image": "./assets/companies/apple-logo.png"
+        "name": "Lego",
+        "image": "./assets/companies/lego.png"
     },
     {
-        "name": "Cif",
-        "image": "./assets/companies/apple-logo.png"
+        "name": "Monin",
+        "image": "./assets/companies/monin.webp"
+    },
+    {
+        "name": "Portwest",
+        "image": "./assets/companies/portwest.jpg"
     }
 ]

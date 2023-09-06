@@ -4,6 +4,8 @@ import './App.css'
 import Navbar from './components/Navbar';
 import Features from './components/Features';
 import Company from './components/Company';
+import Form from './components/Form';
+import MapComponent from './components/MapComponent';
 
 // Animation
 import Animate from './components/Animate';
@@ -28,13 +30,17 @@ function App() {
         </Animate>
     ));
 
-    const MappedCompanies = CompaniesData.map((item) => (
-        <Company
-            key={item.name}
-            name={item.name}
-            image={item.image}
-        ></Company>
-    ));
+    const MappedCompanies = CompaniesData
+        .slice() // Create a shallow copy to avoid mutating the original array
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((item) => (
+            <Company
+                key={item.name}
+                name={item.name}
+                image={item.image}
+            ></Company>
+        ));
+
 
 
 
@@ -71,28 +77,41 @@ function App() {
                         <h1>Featured Brands</h1>
                         <p>We Supply the some of the leading brands in every category shown below with competitive pricing and fast delivery in UK Mainland. Contact Us to get your account setup and enquire about your required goods.</p>
                     </div>
-                    <Animate delay={0.4}>
-                        <div className='company-list-container'>
-                            {MappedCompanies}
-                        </div>
-                    </Animate>
+                    <div className='company-list-container'>
+                        {MappedCompanies}
+                    </div>
                 </div>
-
-                {/* <div className='company-list-container'>
-                    <Company></Company>
-                    <Company></Company>
-                    <Company></Company>
-                    <Company></Company>
-                    <Company></Company>
-                    <Company></Company>
-                    <Company></Company>
-                    <Company></Company>
-                </div> */}
 
             </section>
             <section id='Contact'>
+                <div className='form-container'>
 
+                    <Form></Form>
+                </div>
+                <div className='map-container'>
+                    <Animate delay={0.4}>
+                        <MapComponent></MapComponent>
+                    </Animate>
+                    <div className='address-container'>
+                        <div className='address'>
+                            <h3>FIND US</h3>
+                            <p>B2 Unit 110-111, <br></br>
+                                Oxgate House, <br></br>
+                                Oxgate Lane, London, <br></br>
+                                NW2 7FS</p>
+                        </div>
+                        <div className='contact-details'>
+                            <h3>CONTACT</h3>
+                            <p>Info@visionimwholesale.co.uk</p>
+                        </div>
+                    </div>
+                </div>
             </section>
+
+            <footer>
+                <p>Registered Office: <br></br> B2 Unit 110-111, Oxgate House, Oxgate Lane, London, NW2 7FS</p>
+                <p>Registered in UK. Company Reg. GB13824476. VAT 4267 89844 © 2023 Visionim Wholesale. All rights reserved </p>
+            </footer>
         </>
     )
 }

@@ -14,16 +14,19 @@
     width: 75px;
     margin: 10px 0 0 0;
     padding: 0;
+
 }
 
 .Features-container h4 {
     font-size: 1.3rem;
     color: #0071BC;
     margin: 10px 0;
+    padding: 0 5%;
 }
 
 .Features-container p {
     font-size: 1rem;
     color: #F6F4F4;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
+    padding: 0 7%;
 }
